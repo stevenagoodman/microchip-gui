@@ -1,5 +1,9 @@
 function About() {
-  return <></>;
+  return (
+    <>
+      <div>adfjk</div>
+    </>
+  );
 }
 
 export default About;

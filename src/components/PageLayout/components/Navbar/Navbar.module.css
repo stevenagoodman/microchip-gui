@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(56, 56, 56);
+  background-color: var(--page-secondary-color);
   width: 100vw;
+}
+
+.navbar a:hover {
+  filter: brightness(1.5);
 }
 
 .navsubbar {
@@ -11,27 +15,19 @@
   margin: 0;
   padding: 0;
 }
-
-.navsubbar a {
+.navsubbar a,
+.logo {
+  color: var(--text-color);
+  background-color: var(--page-secondary-color);
+  font-size: 1rem;
+  padding: 1rem;
   align-content: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  transition: background-color 0.2s ease;
-  color: lightgray;
 }
 
-.navsubbar a:hover {
-  background-color: rgb(80, 80, 80);
-  color: red;
+.left a {
+  background-color: var(--primary-color);
 }
 
-.navbarcontrols a {
-  background-color: purple;
-}
-
-.navbarcontrols a:hover {
-  background-color: darkorchid;
-  color: white;
+.logo {
+  background-color: black;
 }

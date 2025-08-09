@@ -1,11 +1,12 @@
 import type { PropsWithChildren } from "react";
 import Navbar from "./components/Navbar";
+import { Container } from "@mui/material";
 
 function PageLayout({ children }: PropsWithChildren) {
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <Navbar />
-      {children}
+      <Container>{children}</Container>
     </div>
   );
 }

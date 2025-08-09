@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light dark;
+
+  --primary-color: #345995;
+  --secondary-color: #009f93;
+
+  --link-color: var(--secondary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-primary-color: #242424;
+    --page-secondary-color: #607d8b;
+    --text-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-primary-color: #242424;
+    --page-secondary-color: #100f0f;
+    --text-color: #000000;
+  }
+}
